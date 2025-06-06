@@ -45,7 +45,7 @@ db.executemany(
     [("Bob", 1.78), ("Charlie", 1.80)]
 )
 
-✏️ UPDAT
+✏️ UPDTE
 db.execute(
     "UPDATE student SET height = %s WHERE name = %s",
     (1.75, "Alice")
@@ -71,6 +71,9 @@ Makes SQL operations intuitive and less error-prone
 
 📁 File Structure
 mysql_project/
-├── mysql_helper.py      # The MySqlHelper class
-└── README.md            # You're reading it!
+├── mysql_helper.py           #  封装好的 MySqlHelper 类
+├── example.py                #  使用示例代码（连接、增删查改）
+├── requirements.txt          #  所需依赖列表（如 pymysql）
+├── .gitignore                #  忽略缓存文件和中间文件（如 __pycache__）
+└── README.md                 #  项目说明文件（当前这个文档）
 
